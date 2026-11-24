@@ -3191,6 +3191,20 @@ function applyNetSnapshot(s) {
 }
 
 loop();
+// Отключаем правую кнопку мыши
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+// Отключаем Ctrl+S, Ctrl+U, Ctrl+Shift+I и F12
+document.addEventListener('keydown', function(e) {
+    if (
+        e.key === 'F12' ||
+        (e.ctrlKey && (e.key === 's' || e.key === 'S' || e.key === 'u' || e.key === 'U' || e.key === 'ы' || e.key === 'Ы')) ||
+        (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'i' || e.key === 'Ш' || e.key === 'ш'))
+    ) {
+        e.preventDefault();
+        return false;
+    }
+});
 </script>
 
 
