@@ -1,0 +1,12 @@
+{
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "display": "fullscreen",
+  "name": "Cyber Tanks HD",
+  "orientation": "landscape",
+  "scope": "/",
+  "short_name": "Cyber Tanks HD",
+  "start_url": "/cyber-tanks-online-2.0/",
+  "theme_color": "#ffffff",
+  "description": "2D аркадный танковый экшен"
+}
